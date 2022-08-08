@@ -5,156 +5,49 @@
 nav {
 border-bottom: 1px solid black;
 }
+
 .crumbs ol {
-list-style-type: none;
-padding-left: 0;
+list-style-type: none; padding-left: 0;
 }
+
 .crumb {
 display: inline-block;
 }
-.crumb a::after {
-display: inline-block;
-color: #000;
-content: '|';
-font-size: 100%;
-font-weight: bold;
+
+.crumb a::after { display: inline-block; color: #000;
+content: '|'; font-size: 100%; font-weight: bold;
 }
 #search-bar {
 margin-top: 1px;
 }
+
 .page-title {
-padding-right: 50px;
-margin-top: 17px;
+padding-right: 50px; margin-top: 17px;
 }
+
 .menu-item {
 margin-top: 25px;
 }
 </style>
-<center><img
-src="data:image/jpeg;base64,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"
-jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" alt="The Salvatore
-Brothers - TVD - Home | Facebook" data-noaft="1" style="width: 375px; height:
-375px; margin: 0px;"></center>
+<center><img src="data:image/jpeg;base64,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" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" alt="The Salvatore Brothers - TVD - Home | Facebook" data-noaft="1" style="width: 375px; height: 375px; margin: 0px;"></center>
 <hr>
 </head>
 <body>
 <nav class="crumbs">
 <ol>
-<li class="crumb"><a href="#">link 1</a></li><li class="crumb"><a href="#">link 2</a></li>
+<li class="crumb"><a href="#">link 1</a></li>
+ 
+
+<li class="crumb"><a href="#">link 2</a></li>
 <li class="crumb"><a href="#">link 3</a></li>
 <li id="search-bar" align="right">
 <form class="navbar-form navbar-left" role="search">
@@ -163,36 +56,31 @@ Brothers - TVD - Home | Facebook" data-noaft="1" style="width: 375px; height:
 </div>
 </ol>
 </nav>
+
 <style>
 * {
 box-sizing: border-box;
 }
-.column {
-float: left;
-width: 50%;
-padding: 10px;
-height: 300px;
+
+.column { float: left; width: 50%;
+padding: 10px; height: 300px;
 }
-.row:after {
-content: "";
-display: table;
-clear: both;
+
+.row:after { content: ""; display: table; clear: both;
 }
 </style>
 <div class="row">
 <div class="column" style="">
-<iframe width="460" height="290" src="https://youtu.be/embed/R_xeZvHkop4"
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
+<iframe width="460" height="290" src="https://youtu.be/embed/R_xeZvHkop4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="column" style="">
 <h2>THE SALVATORS</h2>
-<p>The salvators is an ambitious and innovative, 21st century Fashion
-designing Company started by Brothers, enthusiastic and highly skilled engineers.
-The salvators was started with the aim of helping customers and business
-to producing fashion products without impacting the quality. We are a one Fashioncompany who can work with focus and aim of cost saving without compromising the
-quality.
+<p>The salvators is an ambitious and innovative, 21st century Fashion designing Company started by Brothers, enthusiastic and highly skilled engineers.
+
+The salvators was started with the aim of helping customers and business to producing fashion products without impacting the quality. We are a one Fashion
+ 
+
+company who can work with focus and aim of cost saving without compromising the quality.
 </p>
 <audio controls autoplay>
 <source src="Hello brother.mp3" type="audio/mpeg">
@@ -204,54 +92,41 @@ quality.
 * {
 box-sizing: border-box;
 }
-.column {
-float: left;
-width: 33.33%;
-padding: 10px;
-height: 300px;
+.column { float: left;
+width: 33.33%; padding: 10px; height: 300px;
 }
-.row:after {
-content: "";
-display: table;
-clear: both;
+
+.row:after { content: ""; display: table; clear: both;
 }
 </style>
 <div class="row">
 <div class="column" style="">
 <form><fieldset>
 <legend><b>Sign up</b></legend>
-<label>User Name :</label><input type="text"
-
-placeholder="username"><br><br>
-
-<label>Password :</label><input type="text"
-
-placeholder="password"><br><br>
-
+<label>User Name :</label><input type="text" placeholder="username"><br><br>
+<label>Password :</label><input type="text" placeholder="password"><br><br>
 <a href="file:///C:/Users/admin/Downloads/THE SALVATORS.html"
-
+ 
 >Register</a>
 
-</form></fieldset>
 </div>
+ 
+
+</form></fieldset>
+ 
 <div class="column" style="">
 <h2>Contact us</h2>
 <p>THE SALVATORS,</p>
-<p>Coimbatore,</p><p>India.</p>
+<p>Coimbatore,</p>
+ 
+
+<p>India.</p>
 <p>Mail id:thesalfashion@gmail.com</p>
 <p>Phone no:+91 987654321</p>
 </div>
 <div class="column" style="">
-<iframe
-
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125323.47388556498!2d7
-6.8971943543086!3d11.011701573390432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!
-1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!
-3m2!1sen!2sin!4v1658853255542!5m2!1sen!2sin" width="400" height="200"
-
-style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-
-when-downgrade"></iframe>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125323.47388556498!2d7 6.8971943543086!3d11.011701573390432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!
+1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0! 3m2!1sen!2sin!4v1658853255542!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer- when-downgrade"></iframe>
 </div>
 </div>
 </body>
@@ -260,8 +135,7 @@ when-downgrade"></iframe>
 <head>
 <title>Submit Your Resume</title>
 <style>
-table, th, td {
-border:1px solid black;
+table, th, td { border:1px solid black;
 }
 </style>
 </head>
@@ -269,57 +143,57 @@ border:1px solid black;
 <h1><b>Submit Your Resume</b></h1>
 <h2><b>Personal Details</b></h2>
 <form>
-<label>First Name :</label><input type="text" placeholder="enter your
-name"><br><br>
-<label>Middle Name:</label><input type="text" placeholder="enter your
-name"><br><br>
-<label>Last Name :</label><input type="text" placeholder="enter your
-name"><br><br>
+<label>First Name :</label><input type="text" placeholder="enter your name"><br><br>
+<label>Middle Name:</label><input type="text" placeholder="enter your name"><br><br>
+<label>Last Name	:</label><input type="text" placeholder="enter your name"><br><br>
 <div>
 <label>
 Date of Birth</label>
 <input type ="date"name ="date"><br><br>
 <label for="age">Age in Years</label>
 
-<input type="number" id="age" name="age"min="18" max="30">
+<input type="number" id="age" name="age"
+ 
+
+min="18" max="30">
+
+ 
+
+
+
+
+
+value="female">
+
+</div>
+</form>
+ 
 <p>Gender
 <input type="radio" id="html" name="fav_language" value="male">
 <label for="male">Male</label>
 <input type="radio" id="css" name="fav_language"
 
-value="female">
-
 <label for="female">Female</label><br></p>
-
-</div>
-</form>
+ 
 <h2><b>Address Details</b></h2>
 <form>
 <p><label for="address">Address :</label>
 <textarea id="address" name="address"></textarea><br></p>
 <label>City/Town:</label><input type="text" placeholder=""><br><br>
-<label>State :</label><input type="text" placeholder=""><br><br>
-<label>Zip Code:</label><input type="text" placeholder="only 6
-
-numbers"><br>
+<label>State	:</label><input type="text" placeholder=""><br><br>
+<label>Zip Code:</label><input type="text" placeholder="only 6 numbers"><br>
 </form>
 <h2><b>Contact Information</b></h2>
 <form>
 <label for="phone">Telephone:</label>
-
-<input type="tel" id="phone" name="phone" placeholder="(044) 999-9999"
-pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+<input type="tel" id="phone" name="phone" placeholder="(044) 999-9999" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
 <label for="phone">Mobile :</label>
-<input type="tel" id="phone" name="phone" placeholder="(+91) 99999-99999"
-pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
-
-<label>Email:</label><input type="text" placeholder="valid
-
-email"><br><br>
-
+<input type="tel" id="phone" name="phone" placeholder="(+91) 99999-99999" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+<label>Email:</label><input type="text" placeholder="valid email"><br><br>
 <label>Website:</label><input type="text" placeholder="valid
-
+ 
 url"><br>
+ 
 
 </form>
 <h2><b>Educational Details</b></h2>
@@ -331,18 +205,26 @@ url"><br>
 <th>Country</th>
 <th>Starting Year</th>
 <th>Ending Year</th>
-<th>Percentage</th></tr>
-<tr>
-<td><input type="checkbox" id="resume" name="resume"
+<th>Percentage</th>
+ 
+
+ 
+
+
+
 
 value="resume">
+ 
+</tr>
+<tr>
+<td><input type="checkbox" id="resume" name="resume"
 
 <label for="resume">10th</label></td>
 <td><label></label><input type="text"
-
+ 
 placeholder="Board/University"></td>
-
 <td><label for="country"></label>
+
 <select id="country">
 <option label="choose">choose</option>
 <option label="india">India</option>
@@ -356,21 +238,24 @@ placeholder="Board/University"></td>
 <td><label></label>
 <input type ="date"name ="date"></td>
 <td><label for="percentage"></label>
-<input type="number" id="percentage" name="percentage"
-min="0" max="100"></td>
 
+<input type="number" id="percentage" name="percentage" min="0" max="100"></td>
+ 
+
+
+
+value="resume">
+ 
 </tr>
 <tr>
 <td><input type="checkbox" id="resume" name="resume"
-
-value="resume">
 
 <label for="resume">12th</label></td>
 <td><label></label><input type="text"
-
+ 
 placeholder="Board/University"></td>
-
 <td><label for="country"></label>
+
 <select id="country">
 <option label="choose">choose</option>
 <option label="india">India</option>
@@ -378,29 +263,39 @@ placeholder="Board/University"></td>
 <option label="belgium">Belgium</option>
 <option label="france">France</option>
 <option label="Canada">Canada</option>
-</select></td><td><label></label>
+</select></td>
+ 
+
+<td><label></label>
 <input type ="date"name ="date"></td>
 <td><label></label>
 <input type ="date"name ="date"></td>
 <td><label for="percentage"></label>
-<input type="number" id="percentage"
+
+ 
 
 name="percentage"
+ 
 
-min="0" max="100"></td>
+
+
 
 </tr>
 <tr>
-<td><input type="checkbox" id="resume" name="resume"
+ 
+<input type="number" id="percentage" min="0" max="100"></td>
+ 
 
 value="resume">
+ 
+<td><input type="checkbox" id="resume" name="resume"
 
 <label for="resume">B.Tech</label></td>
 <td><label></label><input type="text"
-
+ 
 placeholder="Board/University"></td>
-
 <td><label for="country"></label>
+
 <select id="country">
 <option label="choose">choose</option>
 <option label="india">India</option>
@@ -414,22 +309,31 @@ placeholder="Board/University"></td>
 <td><label></label>
 <input type ="date"name ="date"></td>
 <td><label for="percentage"></label>
-<input type="number" id="percentage"
+
+ 
 
 name="percentage"
+ 
 
-min="0" max="100"></td>
+
+
 
 </tr>
 <tr>
-<td><input type="checkbox" id="resume" name="resume"
+ 
+<input type="number" id="percentage" min="0" max="100"></td>
+ 
 
 value="resume">
+ 
+<td><input type="checkbox" id="resume" name="resume"
 
 <label for="resume">M.Tech</label></td>
 <td><label></label><input type="text"
+ 
+placeholder="Board/University"></td>
+<td><label for="country"></label>
 
-placeholder="Board/University"></td><td><label for="country"></label>
 <select id="country">
 <option label="choose">choose</option>
 <option label="india">India</option>
@@ -443,21 +347,16 @@ placeholder="Board/University"></td><td><label for="country"></label>
 <td><label></label>
 <input type ="date"name ="date"></td>
 <td><label for="percentage"></label>
+
 <input type="number" id="percentage"
-
 name="percentage"
-
 min="0" max="100">
 </td>
 </tr>
 </table><br><br>
 <label for="myfile">Attach your resume in .pdf format </label>
-<input type="file" name="upload"
-
-accept="application/pdf,application/vnd.ms-excel" /><br><br>
-
+<input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" /><br><br>
 <input type="checkbox" id="resume" name="resume" value="resume">
-
 <label for="resume"> I filled all the details</label><br><br>
 <button type="submit" value="submit">submit</button>
 </form>
