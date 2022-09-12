@@ -15,13 +15,12 @@
                 let s = today.getSeconds();
                 m = checkTime(m);
                 s = checkTime(s);
-                document.getElementById(&#39;time&#39;).innerHTML =  h + &quot;:&quot; + m + &quot;:&quot; +
-s;
+                document.getElementById(&#39;time&#39;).innerHTML =  h + ";:"; + m + ":"; +s;
                 setTimeout(display, 1000);
             }
             function checkTime(i)
             {
-                if (i &lt; 10) {i = &quot;0&quot; + i};
+                if (i &lt; 10) {i = "0"+ i};
                 return i;
             }
       </script>
