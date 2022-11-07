@@ -86,7 +86,7 @@
             <button ng-click="btn_add();" style="margin-top:10px;">Post Comment</button>
             <h4>Comments</h4>
             <ul>
-                <li ng-repeat="comnt in comment">{{comnt}}
+                <li ng-repeat="comnt in comment" ng-bind="comnt">
                     <a style="float:right" href="" ng-click="remItem($index)">x</a>
                 </li>
             </ul>
@@ -102,7 +102,7 @@
             <option>-</option>
             <option>/</option>
         </select></p>
-        <p>{{ result() }}</p>
+        <p ng-bind="result"></p>
     </div>
     <div class="div1" ng-controller="todoController">To-DO <br>
         <textarea ng-model="todoTask" placeholder="tasks" style="width:550px"></textarea><br>
