@@ -7,21 +7,7 @@
     <title>Experiment-8</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script type="text/javascript">
-        function myCtrl($scope) {
-            $scope.bmi_calc = function () {
-                var w = $scope.weight;
-                var h = $scope.height;
-                var bmi = w / (h * h);
-                if (bmi < 18.5) {
-                    $scope.output = 'Under weight';
-                } else if (bmi >= 18.5 && bmi < 25) {
-                    $scope.output = 'Normal';
-                } else if (bmi >= 25 && bmi < 30) {
-                    $scope.output = 'Over weight';
-                } else if (bmi > 30) {
-                    $scope.output = 'Obese';
-                }
-            }
+       
         };
         function FrmController($scope) {
             $scope.comment = [];
